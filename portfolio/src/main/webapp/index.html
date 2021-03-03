@@ -1,19 +1,197 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+<html lang="en">
+    <head>
+        <title>Teddy Amare's Porftolio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio Project">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Tewodros Amare">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="images/logo3.png">
+
+        <script src="script.js"></script>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <main>
+            <!-- Home -->
+            <section class="home">
+                <div class="container">
+                    <div class="row full-screen">
+                        <div class="home-content">
+                            <div class="block">
+                                <h4>Greetings!</h4>
+                                <h1>Tewodros Amare</h1>
+                                <h3>Google SPS</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home -->        
+
+            <!-- About -->
+            <section class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h1>Getting to Know Me</h1>
+                            <p class="intro">Don't forget to smile &#x1F600; &#x1F604;</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="images/teddy1.jpg" alt="about photo"/>
+                                </div>
+                                <div class="text">
+                                    <p class="about-introduction">
+                                        I am a Sophomore at Northern Kentucky University majoring in Computer Science with a minor in Honors. I am originally from Addis Ababa, the capital of Ethiopia. 
+                                    </p>
+                                    <P>
+                                    I enjoy taking pictures of landscapes and streets at sunsets. There is just something about those settings that always takes my breath away.
+                                    </P>
+                                    <P>
+                                        One hidden talent I have is that I can roll over my hand by interlocking my fingers from my back over my head and to the front.
+                                    </P>
+                                    <p class="about-introduction">
+                                        Click here to get a random quote about my favorite things:</p>
+                                    <button id="greeting-button" onclick="addRandomGreeting()">Generate</button>
+                                    <!-- <button onclick="addRandomGreeting()">Generate</button> -->
+                                    <div id="greeting-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About -->
+            
+            <!-- Projects -->
+            <section class="project" id="projectid">
+                <div class="container">
+                    <div class="project-title">
+                        <h2 class="title">Projects</h2>
+                    </div>
+                    <div class="project-content">
+                        <div class="card">
+                            <div class="box">
+                                <div class="appimgdiv">
+                                    <a href="https://github.com/teddygizachew/twitter-clone" target="_blank"><img src="images/twtr.png" alt="app image" class="appimg"></a>
+                                </div>
+                                <h4>Twitter Clone</h4>
+                                <h3>Android Mobile App</h3>
+                                <p>
+                                    Built an android app using Android Studio allowing a user to view their Twitter timeline and tweet utilizing Twitter REST API. Persisted data to the device for offline use using Room (a Google Lib.) by creating a local SQLite Database. Implemented OAuth protocol with the Twitter API allowing the app to make API calls by managing the network requests
+                                </p>
+                                <div class="link">
+                                    <a href="https://github.com/teddygizachew/twitter-clone" target="_blank">Go to GitHub</a>
+                                </div>
+                                <p class="date">October, 2020</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <div class="appimgdiv">
+                                    <a href="https://github.com/teddygizachew/FlashcardApp" target="_blank"><img src="images/app3.png" alt="app image" class="appimg"></a>
+                                </div>
+                                <h4>Flashcard App</h4>
+                                <h3>Android Mobile App</h3>
+                                <p>
+                                    Attended 8-week program on CodePath's Mobile App Design Course which involved designing and scoping our own mobile app and building a fully functional Flash Card app from scratch over several coding labs
+                                </p>
+                                <div class="link">
+                                    <a href="https://github.com/teddygizachew/FlashcardApp" target="_blank">Go to GitHub</a>
+                                </div>
+                                <p class="date">February, 2020</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <div class="appimgdiv">
+                                    <a href="https://github.com/teddygizachew/BLM-Hackathon" target="_blank"><img src="images/ibm.png" alt="app image" class="appimg"></a>
+                                </div>
+                                <h4>LIFE3 Digital Advisor</h4>
+                                <h3>AI Driven Chatbot</h3>
+                                <p>
+                                    Built a chat bot for Minority Owned Businesses to connect developers and designers to their digital business needs. Integrated and trained IBM Watson’s Artificial Intelligence to create a model from NYC Open Data database. Implemented Node-RED and NodeJS for Back-End Development and Telegram for the Front-End
+                                </p>
+                                <div class="link">
+                                    <a href="https://github.com/teddygizachew/BLM-Hackathon" target="_blank">Go to GitHub</a>
+                                </div>
+                                <p class="date">August, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery -->
+            <section class="gallery">
+                <div class="container">
+                    <div class="section-title">
+                        <h1>Gallery</h1>
+                    </div>
+                </div>
+                <div class="gallery-boxes">
+                    <div><img src="images/img2.JPG" alt="Zipline"></div>
+                    <div><img src="images/img3.JPG" alt="Rose Lavelle"></div>
+                    <div><img src="images/img4.JPG" alt="Cincinnati"></div>
+                    <div><img src="images/img5.jpg" alt="Amsterdam"></div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content" id="footerflex">
+                    <div class="box">
+                        <div class="icon">
+                            <a href="tel:1-234-456-7890"><span class="fa fa-phone"></span></a>
+                        </div>
+                        <!-- <h4>Phone</h4> -->
+                        <a href="tel:1-234-456-7890">1-234-456-7890</a>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <a href="https://linkedin.com/in/teddyamare"><span class="fa fa-linkedin"></span></a>
+                        </div>
+                        <h4>LinkedIn</h4>
+                        <!-- <a href="https://linkedin.com/in/teddyamare">linkedin.com/in/teddyamare</a> -->
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <a href="https://github.com/teddygizachew"><span class="fa fa-github"></span></a>
+                        </div>
+                        <h4>Github</h4>
+                        <!-- <a href="https://github.com/teddygizachew">github.com/teddygizachew</a> -->
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <a href="mailto:teddygizachew1@gmail.com"><span class="fa fa-envelope"></span></a>
+                        </div>
+                        <!-- <h4>Email</h4> -->
+                        <a href="mailto:teddygizachew1@gmail.com">teddygizachew1@gmail.com</a>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <span class="fa fa-map-marker"></span>
+                        </div>
+                        <!-- <h4>Location</h4> -->
+                        <P>Atlanta, GA</P>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-note">
+                &copy 2020 Tewodros Amare
+            </div>
+        </footer>
+        <!-- Footer -->
+        </main>
+    </body>
 </html>

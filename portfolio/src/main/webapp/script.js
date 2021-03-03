@@ -17,7 +17,11 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ["\"We struggle so hard to hold on to these things that we know are gonna disappear eventually. And that’s really noble.\" — Lily Aldrin",
+      "Favorite colors: blue and black",
+      "Music genre: Alternative",
+      "Favorite Cereal: Honey Bunches of Oats - with Almonds",
+      "Sports: Soccer, Volleyball and Fomrula1"];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -26,3 +30,15 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+// function addRandomImages() {
+//   const images =
+//       ["We struggle so hard to hold on to these things that we know are gonna disappear eventually. And that’s really noble.", "", "", "", "", ""];
+
+//   // Pick a random greeting.
+//   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+
+//   // Add it to the page.
+//   const greetingContainer = document.getElementById('greeting-container');
+//   greetingContainer.innerText = greeting;
+// }
