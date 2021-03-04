@@ -30,15 +30,3 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
-
-// function addRandomImages() {
-//   const images =
-//       ["We struggle so hard to hold on to these things that we know are gonna disappear eventually. And that’s really noble.", "", "", "", "", ""];
-
-//   // Pick a random greeting.
-//   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-//   // Add it to the page.
-//   const greetingContainer = document.getElementById('greeting-container');
-//   greetingContainer.innerText = greeting;
-// }
